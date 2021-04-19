@@ -1,0 +1,365 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 699px) {
+
+  
+.menu-btn{
+        display: block;
+        z-index: 999;
+    }
+.menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #9cdee5;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .inicio{
+    display: flex;
+    background: url("images/background1.png") no-repeat left;
+    height: 100vh;
+    color: #fbfbfb;
+    min-height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+    .inicio .inicio-content .text-2{
+        font-size: 60px;
+    }
+    .inicio .inicio-content .text-3{
+        font-size: 32px;
+    }
+    .inicio .inicio-content a{
+        font-size: 20px;
+    }
+    .servicos .serv-content .card{
+        width: 100%;
+    }
+.owl-dot{
+    height: 10px;
+    width: 9px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #BB2020!important;}
+
+.inicio .inicio-content .text-2{font-size: 30px; width: 90%; font-weight: 600; margin-left: -3px; color: #4879a5;}
+
+.inicio .inicio-content .text-3{font-size: 20px; width: 90%; margin: 5px 0; color: #86ccd9;}
+
+.servicos{height: 100%;}
+
+.servicos, .dicas{color:#fff;background: url("images/backgroundservicos.png") no-repeat center;}
+
+.servicos .titulos::before,
+.trabalhos .titulos::before{background: #fff;}
+
+.servicos .serv-content .card{width: calc(20% - 10px);background: none;
+text-align: center; border-radius: 6px; padding: 35px 25px; cursor: pointer;transition: all 0.3s ease;}
+
+.servicos .serv-content .card:hover{background: none; display: flex;}
+
+.servicos .serv-content .card img{margin-top: 60px; width: 80%; margin-left: -100%; }
+
+.servicos .serv-content .card .box{transition: all 0.3s ease;}
+
+.servicos .serv-content .card:hover .box{transform: scale(1.10);}
+
+.servicos .serv-content .card i{font-size: 50px; transition: color 0.3s ease;}
+
+.servicos .serv-content .card:hover i{color: #fff;}
+
+.servicos .serv-content .card .text{font-size: 15px; font-weight: 500; color: #566896; margin-left: -100%;}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*Quem somos*/ /*------------------------------------*/ /*Quem somos*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+
+/* sobre section styling */
+.sobre{background: #e9f1f4; height: 100%;}
+
+.icones{display: flex;}
+
+.sobre .sobre-content .left{width: 45%;}
+
+.sobre .sobre-content .right img{ height: 400px; width: 320px; object-fit: cover; border-radius: 6px;
+margin-top: 27%; margin-left: 0%;}
+
+.sobre .sobre-content .left{width: 55%;}
+
+.sobre .sobre-content .left .text{font-size: 25px; font-weight: 600; margin-bottom: 10px;
+margin-left: -70%; color: #4879a5; margin-left: -30%;}
+
+.sobre .sobre-content .left .text span{color: #BB2020; }
+
+.sobre .sobre-content .left p{text-align: left; margin-left: -30%; width: 400px; color: #4879a5;}
+
+section .titulos2{text-align: left; font-size: 40px; padding-bottom: 20px; font-family: 'Montserrat', sans-serif
+font-weight: 800;color: #7ec9d7; margin-top: 150px; margin-left: -30%;}
+
+.box{display: inline-block;}
+
+.sobre .sobre-content .left a {display: inline-block; background: 
+  -webkit-linear-gradient(right, #6dc9dd, #6dc9dd, #8ed5e2, #a4dbe5);color: #fff; font-size: 13px;
+font-weight: 600;padding: 10px 20px; margin-top: 20px;border-radius: 6px; letter-spacing: 8px;
+transition: all 0.3s ease; margin-left: -30%;}
+
+.sobre .sobre-content .left a:hover{background: -webkit-linear-gradient(right, #a4dbe5, #6dc9dd, #8ed5e2, #6dc9dd);
+transition: all 0.3s ease;}
+
+.sobre .sobre-content .right a:hover{color: #80d0e0;background: none;}
+
+
+
+/* contato section styling */
+
+
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.content2{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content3{
+  position: relative;
+  margin: 130px auto;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.social{
+margin-left: -150px;
+}
+.social img{
+    margin: 10px;
+    width: 40px;
+}
+.social-sobre{
+    margin-left: -440px;
+    
+}
+.social-sobre img{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 30px;
+}
+.icon{     
+    width: 0px;
+    transform: scale(1.05);
+
+}
+
+.icon:hover{
+   width: 36px;
+    transition: all 0.3s ease;
+}
+
+.social-menu{
+    margin-left: 50px;
+    margin-top: -100%;
+}
+.social-menu img{
+     margin-left: 20px;
+    width: 30px;
+}
+.menu-contato{
+    margin-left: 50px;
+    margin-top: -40%;
+}
+
+.content1 .text{
+  font-size: 10px;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+
+h3{
+letter-spacing: 8px;
+color: #7ec9d7;
+font-size: 13px;
+margin: 10px;
+}
+h2{
+    color: #4879a5;
+}
+
+.info{
+    margin: 20px;
+}
+ul .menu-contato{
+margin-bottom: 2px;
+
+}
+
+  footer{
+  	 width: 100%;
+  background: #e9f1f4;
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin-top: -30% ;
+  }
+
+/* Tablet */
+@media only screen and (min-width: 700px) and (max-width: 1023px) {
+
+  
+.menu-btn{
+        display: block;
+        z-index: 999;
+    }
+.menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #9cdee5;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) {
+
+  
+.menu-btn{
+        display: block;
+        z-index: 999;
+    }
+.menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #9cdee5;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+  
+.menu-btn{
+        display: block;
+        z-index: 999;
+    }
+.menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #9cdee5;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+
+}
